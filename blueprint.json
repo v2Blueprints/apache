@@ -1,0 +1,35 @@
+{
+	"title": "apache",
+	"description": "apache web Server",
+	"configuration": {
+		"DEBIAN_FRONTEND": "noninteractive",
+		"ServerName": "^^fqdn^^",
+		"port": 80,
+		"ServerAdmin": "webmaster@^^domain_name^^"
+	}
+,
+"os_packages": [
+	{
+		"type": "debian",
+		"name": "apache2"
+	}
+],
+"persistent": [
+	{
+		"type": "dir",
+		"destination": "/var/log/apache/",
+		"source": "/var/lib/containers/^^identifier^^/log"
+	}
+],
+"images": [
+	{
+		"type": "lxd",
+		"image": "images/debian/stretch/cloud"
+	}
+],
+"containers": [
+	{
+		"type": "lxd"
+	}
+]
+}

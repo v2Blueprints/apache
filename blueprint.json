@@ -14,13 +14,6 @@
 		"name": "apache2"
 	}
 ],
-"persistent": [
-	{
-		"type": "dir",
-		"destination": "/var/log/apache/",
-		"source": "/var/lib/containers/^^identifier^^/log"
-	}
-],
 "images": [
 	{
 		"type": "lxd",

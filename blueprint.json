@@ -6,23 +6,21 @@
 		"ServerName": "^^fqdn^^",
 		"port": 80,
 		"ServerAdmin": "webmaster@^^domain_name^^"
-	}
-,
-"os_packages": [
-	{
-		"type": "debian",
-		"name": "apache2"
-	}
-],
-"images": [
-	{
-		"type": "lxd",
-		"image": "images/debian/stretch/cloud"
-	}
-],
-"containers": [
-	{
-		"type": "lxd"
-	}
-]
+	},
+	"os_packages": {
+		"adds": [
+			"apache2"
+		]
+	},
+	"images": [
+		{
+			"type": "lxd",
+			"image": "images/debian/stretch/cloud"
+		}
+	],
+	"containers": [
+		{
+			"type": "lxd"
+		}
+	]
 }

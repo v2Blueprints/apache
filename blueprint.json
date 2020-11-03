@@ -3,9 +3,13 @@
 	"description": "apache web Server",
 	"configuration": {
 		"DEBIAN_FRONTEND": "noninteractive",
-		"ServerName": "^^fqdn^^",
-		"port": 80,
 		"ServerAdmin": "webmaster@^^domain_name^^"
+	},
+	"binding_anchor": {
+		"variables": {
+			"ServerName": "^^fqdn^^",
+			"port": 80
+		}
 	},
 	"os_packages": [
 		{

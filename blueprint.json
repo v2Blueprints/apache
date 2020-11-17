@@ -3,14 +3,13 @@
 	"description": "apache web Server",
 	"configuration": {
 		"DEBIAN_FRONTEND": "noninteractive",
-		"ServerName": "^^fqdn^^",
-		"port": 80,
 		"ServerAdmin": "webmaster@^^domain_name^^"
 	},
-	"os_packages": {
-		"adds": [
-			"apache2"
-		]
+	"binding_anchor": {
+		"variables": {
+			"ServerName": "^^fqdn^^",
+			"port": 80
+		}
 	},
 	"bindings": [
 		{
@@ -24,9 +23,17 @@
 			}
 		}
 	],
-	"containers": [
+	"os_packages": [
 		{
-			"type": "lxd"
+			"adds": [
+				"apache2"
+			]
+		}
+	],
+	"volumes": [
+		{
+			"destination": "/var/log/apache/",
+			"source": "logs"
 		}
 	]
 }

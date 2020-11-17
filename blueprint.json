@@ -12,10 +12,16 @@
 			"apache2"
 		]
 	},
-	"images": [
+	"bindings": [
 		{
-			"type": "lxd",
-			"image": "images/debian/stretch/cloud"
+			"type": "embed",
+			"descriptor": {
+				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+			},
+			"variables": {
+				"locale": "^^locale^^",
+				"charset": "^^charset^^"
+			}
 		}
 	],
 	"containers": [

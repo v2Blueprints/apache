@@ -23,13 +23,11 @@
 			}
 		}
 	],
-	"os_packages": [
-		{
-			"adds": [
-				"apache2"
-			]
-		}
-	],
+	"os_packages": {
+		"adds": [
+			"apache2"
+		]
+	},
 	"volumes": [
 		{
 			"destination": "/var/log/apache/",

@@ -1,25 +1,16 @@
 {
 	"title": "apache",
 	"description": "apache web Server",
-	"configuration": {
-		"DEBIAN_FRONTEND": "noninteractive",
-		"ServerAdmin": "webmaster@^^domain_name^^"
-	},
 	"binding_anchor": {
-		"variables": {
-			"ServerName": "^^fqdn^^",
-			"port": 80
-		}
+		"ServerAdmin": "webmaster@^^domain.name^^",
+		"ServerName": "^^domain.fqdn^^",
+		"port": 80
 	},
 	"bindings": [
 		{
 			"type": "embed",
 			"descriptor": {
 				"repository": "https://github.com/MarkRatjens/enginesd_debian_base"
-			},
-			"variables": {
-				"locale": "^^locale^^",
-				"charset": "^^charset^^"
 			}
 		}
 	],

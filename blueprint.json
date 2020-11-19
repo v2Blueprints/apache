@@ -1,35 +1,24 @@
 {
 	"title": "apache",
 	"description": "apache web Server",
-	"configuration": {
-		"DEBIAN_FRONTEND": "noninteractive",
-		"ServerAdmin": "webmaster@^^domain_name^^"
-	},
 	"binding_anchor": {
-		"variables": {
-			"ServerName": "^^fqdn^^",
-			"port": 80
-		}
+		"ServerAdmin": "webmaster@^^domain.name^^",
+		"ServerName": "^^domain.fqdn^^",
+		"port": 80
 	},
 	"bindings": [
 		{
 			"type": "embed",
 			"descriptor": {
 				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-			},
-			"variables": {
-				"locale": "^^locale^^",
-				"charset": "^^charset^^"
 			}
 		}
 	],
-	"os_packages": [
-		{
-			"adds": [
-				"apache2"
-			]
-		}
-	],
+	"os_packages": {
+		"adds": [
+			"apache2"
+		]
+	},
 	"volumes": [
 		{
 			"destination": "/var/log/apache/",

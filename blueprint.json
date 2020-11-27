@@ -3,7 +3,7 @@
 	"description": "apache web Server",
 	"binding_anchor": {
 		"ServerAdmin": "webmaster@^^domain.name^^",
-		"ServerName": "^^domain.fqdn^^",
+		"ServerName": "^^domain.qualified_name^^",
 		"port": 80
 	},
 	"bindings": [

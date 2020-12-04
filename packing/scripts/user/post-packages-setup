@@ -1,7 +1,0 @@
-#!/bin/sh
-
- /tmp/packing/scripts/user/add_apache_modules
- if test -f /tmp/packing/scripts/user/post_configure_apache
-	 then 
-	 	 /tmp/packing/scripts/user/post_configure_apache
-fi	 	 

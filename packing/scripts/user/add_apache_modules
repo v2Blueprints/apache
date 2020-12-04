@@ -1,9 +1,0 @@
-#!/bin/sh
-  
-if test -f /tmp/packing/etc/modules/apache
- then
-  for module in `cat /tmp/packing/etc/apache_modules`
-    do
-       a2enmod $module
-    done
-  fi

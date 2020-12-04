@@ -14,7 +14,7 @@
 			}
 		}
 	],
-	"os_packages": {
+	"system_packages": {
 		"adds": [
 			"apache2"
 		]

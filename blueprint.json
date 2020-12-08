@@ -18,11 +18,5 @@
 		"adds": [
 			"apache2"
 		]
-	},
-	"volumes": [
-		{
-			"destination": "/var/log/apache/",
-			"source": "logs"
-		}
-	]
+	}
 }

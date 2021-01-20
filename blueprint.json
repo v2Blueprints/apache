@@ -1,7 +1,9 @@
 {
-	"title": "apache",
-	"description": "apache web Server",
-	"binding_anchor": {
+	"about": {
+		"title": "apache",
+		"explanation": "apache web Server"
+	},
+	"binding_target": {
 		"ServerAdmin": "webmaster@^^domain.name^^",
 		"ServerName": "^^domain.qualified_name^^",
 		"port": 80
@@ -9,7 +11,7 @@
 	"bindings": [
 		{
 			"type": "embed",
-			"descriptor": {
+			"target": {
 				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
 			}
 		}

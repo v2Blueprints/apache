@@ -3,15 +3,18 @@
 		"title": "apache",
 		"explanation": "apache web Server"
 	},
-	"binding_target": {
+	"configuration": {
 		"ServerAdmin": "webmaster@^^domain.name^^",
-		"ServerName": "^^domain.qualified_name^^",
+		"ServerName": "^^domain.qualified_name^^"
+	},
+	"binding_target": {
+		"ContainerName": "^^identifer^^",
 		"port": 80
 	},
 	"images": [
 		{
-			"type": "docker",
-			"image": "engines/debian"
+		 "type": "docker",
+		 "image": "engines/debian"
 		}
 	],
 	"bindings": [

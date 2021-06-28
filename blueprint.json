@@ -8,9 +8,16 @@
 		"ServerName": "^^domain.qualified_name^^",
 		"port": 80
 	},
+	"images": [
+		{
+			"type": "docker",
+			"image": "engines/debian"
+		}
+	],
 	"bindings": [
 		{
 			"type": "embed",
+			"runtime": "lxd",
 			"target": {
 				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
 			}
@@ -20,5 +27,11 @@
 		"adds": [
 			"apache2"
 		]
-	}
+	},
+	"executions": [
+		{
+			"type": "docker",
+			"CMD": "/usr/sbin/apachectl start"
+		}
+	]
 }

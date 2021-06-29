@@ -8,7 +8,7 @@
 		"ServerName": "^^domain.qualified_name^^"
 	},
 	"binding_target": {
-		"ContainerName": "^^identifer^^",
+		"ContainerName": "^^binder.identifier^^",
 		"port": 80
 	},
 	"images": [

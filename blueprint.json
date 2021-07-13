@@ -9,7 +9,7 @@
 	},
 	"binding_target": {
 		"ContainerName": "^^binder.identifier^^",
-		"port": 80
+		"port": 8080
 	},
 	"images": [
 		{
@@ -34,7 +34,7 @@
 	"executions": [
 		{
 			"type": "docker",
-			"CMD": "/usr/sbin/apachectl start"
+			"CMD": "/usr/local/bin/start.sh"
 		}
 	]
 }

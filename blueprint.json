@@ -14,16 +14,8 @@
 	"bindings": [
 		{
 			"type": "embed",
-			"runtime": "lxd",
 			"target": {
 				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-			}
-		},
-		{
-			"type": "embed",
-			"target": {
-				"repository": "https://github.com/v2Blueprints/enginesd_debian_base",
-				"TYPE" : "FROM"
 			}
 		}
 	],
@@ -31,11 +23,5 @@
 		"adds": [
 			"apache2"
 		]
-	},
-	"executions": [
-		{
-			"type": "docker",
-			"CMD": "/usr/local/bin/start.sh"
-		}
-	]
+	}
 }

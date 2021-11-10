@@ -11,18 +11,19 @@
 		"ContainerName": "^^binder.identifier^^",
 		"port": 8080
 	},
-	"images": [
-		{
-		 "type": "docker",
-		 "image": "engines/engines/base_arena/enginesd_debian_base"
-		}
-	],
 	"bindings": [
 		{
 			"type": "embed",
 			"runtime": "lxd",
 			"target": {
 				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+			}
+		},
+		{
+			"type": "embed",
+			"target": {
+				"repository": "https://github.com/v2Blueprints/enginesd_debian_base",
+				"TYPE" : "FROM"
 			}
 		}
 	],

@@ -1,27 +1,41 @@
 {
-	"about": {
-		"title": "apache",
-		"explanation": "apache web Server"
-	},
-	"configuration": {
-		"ServerAdmin": "webmaster@^^domain.name^^",
-		"ServerName": "^^domain.qualified_name^^"
-	},
-	"binding_target": {
-		"ContainerName": "^^binder.identifier^^",
-		"port": 8080
-	},
-	"bindings": [
-		{
-			"type": "embed",
-			"target": {
-				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-			}
-		}
-	],
-	"system_packages": {
-		"adds": [
-			"apache2"
-		]
-	}
+  "identifier": "apache",
+  "about": {
+    "title": "apache",
+    "explanation": "apache web Server"
+  },
+  "configuration": {
+    "ServerAdmin": "webmaster@^^domain.name^^",
+    "ServerName": "^^domain.qualified_name^^"
+  },
+  "binding_target": {
+    "ContainerName": "^^binder.identifier^^",
+    "port": 8080
+  },
+  "bindings": [
+    {
+      "type": "embed",
+      "runtimes": [
+        "lxd"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ],
+  "images": [
+    {
+      "runtimes": [
+        "docker"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ],
+  "system_packages": {
+    "adds": [
+      "apache2"
+    ]
+  }
 }

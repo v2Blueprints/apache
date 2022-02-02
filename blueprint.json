@@ -5,10 +5,12 @@
     "explanation": "apache web Server"
   },
   "binding_target": {
-    "ServerAdmin": "webmaster@^^domain.name^^",
-    "ServerName": "^^domain.qualified_name^^",
-    "ContainerName": "^^identifier^^",
-    "port": 8080
+    "configuration" : {
+      "ServerAdmin": "webmaster@^^domain.name^^",
+      "ServerName": "^^domain.qualified_name^^",
+      "ContainerName": "^^identifier^^",
+      "port": 8080
+    }
   },
   "bindings": [
     {

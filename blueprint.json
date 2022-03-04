@@ -24,10 +24,10 @@
 		},
 		{
 			"target": {
-				"repository": "https://github.com/v2Blueprints/wap",
-				"service": {
-					"port": "^^apache.port^^"
-				}
+				"repository": "https://github.com/v2Blueprints/wap"
+			},
+			"service": {
+				"port": "^^apache.port^^"
 			}
 		}
 	],
